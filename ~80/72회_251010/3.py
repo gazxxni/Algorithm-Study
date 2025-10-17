@@ -1,3 +1,31 @@
+# k = int(input())
+
+# cnt = 0
+# a = 1
+# while True:
+#   if a >= k:
+#       break
+  
+#   a *= 2
+#   cnt += 1   
+
+# if k % 2 == 1:
+#     print(a, cnt)
+    
+# elif k == a:
+#     print(a, 0)
+    
+# else:
+#     cnt2 = 0
+#     ans = a
+#     while k > 0:
+#         if k >= a:
+#             k -= a
+#         else:
+#             a //= 2
+#             cnt2 += 1
+#     print(ans, cnt2)
+
 k = int(input())
 
 cnt = 0
@@ -9,33 +37,19 @@ while True:
   a *= 2
   cnt += 1   
 
-if k % 2 == 1:
-    print(a, cnt)
+# if k % 2 == 1:
+#     print(a, cnt)
     
-elif k == a:
-    print(a, 0)
+# elif k == a:
+#     print(a, 0)
     
-else:
-    cnt2 = 0
-    ans = a
-    while k > 0:
-        if k >= a:
-            k -= a
-        else:
-            a //= 2
-            cnt2 += 1
-    print(ans, cnt2)
-    
-
-
-
-
-
-
-
-
-# def bitcount(n):
-#     if n == 0:
-#         return 0
-    
-#     return n % 2 + bitcount(n // 2)
+# else:
+cnt2 = 0
+ans = a
+while k > 0:
+    if k >= a:
+        k -= a
+    else:
+        a //= 2
+        cnt2 += 1
+print(ans, cnt2)
